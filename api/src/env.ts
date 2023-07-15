@@ -271,7 +271,7 @@ const defaults: Record<string, any> = {
 
 	PACKAGE_FILE_LOCATION: '.',
 	EXTENSIONS_PATH: './extensions',
-	EXTENSIONS_AUTO_RELOAD: false,
+	EXTENSIONS_AUTO_RELOAD: true,
 
 	EMAIL_FROM: 'no-reply@example.com',
 	EMAIL_VERIFY_SETUP: true,
