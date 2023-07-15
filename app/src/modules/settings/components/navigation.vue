@@ -9,27 +9,27 @@
 
 		<v-divider />
 
-		<v-list-item v-for="item in externalItems" :key="item.href" :href="item.href">
+		<!-- <v-list-item v-for="item in externalItems" :key="item.href" :href="item.href">
 			<v-list-item-icon><v-icon :name="item.icon" /></v-list-item-icon>
 			<v-list-item-content>
 				<v-text-overflow :text="item.name" />
 			</v-list-item-content>
-		</v-list-item>
+		</v-list-item> -->
 
-		<v-list-item href="https://github.com/directus/directus/releases" class="version">
+		<!-- <v-list-item href="https://github.com/directus/directus/releases" class="version">
 			<v-list-item-icon><v-icon name="directus" /></v-list-item-icon>
 			<v-list-item-content>
 				<v-text-overflow class="version" :text="`Directus ${version}`" />
 			</v-list-item-content>
-		</v-list-item>
+		</v-list-item> -->
 	</v-list>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+// import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const version = __DIRECTUS_VERSION__;
+// const version = __DIRECTUS_VERSION__;
 
 const { t } = useI18n();
 
@@ -71,20 +71,20 @@ const navItems = [
 	},
 ];
 
-const externalItems = computed(() => {
-	return [
-		{
-			icon: 'bug_report',
-			name: t('report_bug'),
-			href: 'https://github.com/directus/directus/issues/new',
-		},
-		{
-			icon: 'new_releases',
-			name: t('request_feature'),
-			href: 'https://github.com/directus/directus/discussions/new',
-		},
-	];
-});
+// const externalItems = computed(() => {
+// 	return [
+// 		{
+// 			icon: 'bug_report',
+// 			name: t('report_bug'),
+// 			href: 'https://github.com/directus/directus/issues/new',
+// 		},
+// 		{
+// 			icon: 'new_releases',
+// 			name: t('request_feature'),
+// 			href: 'https://github.com/directus/directus/discussions/new',
+// 		},
+// 	];
+// });
 </script>
 
 <style scoped>
