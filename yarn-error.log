@@ -1,0 +1,51 @@
+Arguments: 
+  /Users/arqnet/.nvm/versions/node/v18.15.0/bin/node /Users/arqnet/.yarn/bin/yarn.js add @thirdrocktechno/directus-extension-directusgpt
+
+PATH: 
+  /Users/arqnet/.rvm/gems/ruby-2.5.3/bin:/Users/arqnet/.rvm/gems/ruby-2.5.3@global/bin:/Users/arqnet/.rvm/rubies/ruby-2.5.3/bin:/Users/arqnet/google-cloud-sdk/bin:/usr/local/opt/python/libexec/bin:/Users/arqnet/.yarn/bin:/Users/arqnet/.config/yarn/global/node_modules/.bin:/Users/arqnet/.amplify/bin:/usr/local/sbin:/Users/arqnet/.rbenv/shims:/usr/local/opt/ruby/bin:/Users/arqnet/.pyenv/shims:/Users/arqnet/.nvm/versions/node/v18.15.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/arqnet/.cargo/bin:/Users/arqnet/.fig/bin:/Users/arqnet/.local/bin:/usr/local/bin:/Users/arqnet/.rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EEXIST: file already exists, mkdir '/Users/arqnet/Documents/GitHub/directus/node_modules/@changesets/logger/node_modules'
+
+npm manifest: 
+  {
+  	"name": "directus-monorepo",
+  	"private": true,
+  	"scripts": {
+  		"build": "pnpm --recursive --filter '!docs' run build",
+  		"format": "prettier --cache --check .",
+  		"lint": "eslint --cache .",
+  		"test": "pnpm --recursive --filter '!tests-blackbox' test",
+  		"test:blackbox": "pnpm --filter directus deploy --prod dist && pnpm --filter tests-blackbox test"
+  	},
+  	"devDependencies": {
+  		"@changesets/cli": "2.26.1",
+  		"@directus/release-notes-generator": "workspace:*",
+  		"@typescript-eslint/eslint-plugin": "5.59.6",
+  		"@typescript-eslint/parser": "5.59.6",
+  		"eslint": "8.40.0",
+  		"eslint-config-prettier": "8.8.0",
+  		"eslint-plugin-vue": "9.13.0",
+  		"prettier": "2.8.8"
+  	},
+  	"packageManager": "pnpm@8.6.0",
+  	"engines": {
+  		"node": ">=18.0.0",
+  		"pnpm": "~8.6.0"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

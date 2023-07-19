@@ -71,7 +71,6 @@ export const MODULE_BAR_DEFAULT = [
 		type: 'module',
 		id: 'settings',
 		enabled: true,
-		locked: true,
 	},
 ];
 

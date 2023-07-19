@@ -136,12 +136,12 @@ const { modules: registeredModules } = useExtensions();
 
 const availableModulesAsBarModule = computed<SettingsModuleBarModule[]>(() => {
 	return registeredModules.value
-		.filter((module) => module.hidden !== true)
+		// .filter((module) => module.hidden !== true)
 		.map(
 			(module): SettingsModuleBarModule => ({
 				type: 'module',
 				id: module.id,
-				enabled: false,
+				enabled: true,
 			})
 		);
 });
